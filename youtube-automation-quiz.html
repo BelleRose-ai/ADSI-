@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Automation & Faceless Channels - Week 1 Quiz | ADSI Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#fbfbfa] text-slate-900 font-['Inter',sans-serif] min-h-screen py-12 px-4">
+  <div class="max-w-2xl mx-auto space-y-8">
+    <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+      <div>
+        <span class="text-xs uppercase tracking-wider text-emerald-800 font-bold bg-emerald-50 px-3 py-1 rounded-full">YouTube Automation Track</span>
+        <h1 class="font-['Playfair_Display',serif] text-2xl font-bold text-emerald-950 mt-2">Week 1 Assessment Quiz</h1>
+      </div>
+      <a href="/" class="text-xs font-semibold text-slate-600 hover:text-emerald-900 bg-white border border-slate-200 px-4 py-2 rounded-xl shadow-sm">← Back to Portal</a>
+    </div>
+
+    <div id="quiz-container" class="bg-white rounded-3xl p-8 border border-slate-200 shadow-xl space-y-8">
+      <div class="space-y-6">
+        <!-- Question 1 -->
+        <div class="space-y-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-semibold text-sm text-slate-900">1. What defines a "faceless YouTube channel"?</p>
+          <div class="space-y-2 text-xs">
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q1" value="a"> A channel where the creator wears a mask
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q1" value="b" data-correct="true"> A channel where videos are produced using stock footage, AI voiceovers, and editing without showing the creator's face
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q1" value="c"> A channel with no subscribers
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="space-y-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-semibold text-sm text-slate-900">2. Which metric is most critical for YouTube algorithm recommendation growth?</p>
+          <div class="space-y-2 text-xs">
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q2" value="a"> Video title length
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q2" value="b" data-correct="true"> Click-Through Rate (CTR) and Audience Retention (Average View Duration)
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q2" value="c"> Number of hashtags used
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="space-y-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-semibold text-sm text-slate-900">3. What is the purpose of A/B testing YouTube thumbnails?</p>
+          <div class="space-y-2 text-xs">
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q3" value="a"> To test microphone audio quality
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q3" value="b" data-correct="true"> To compare two different thumbnail designs to see which drives a higher CTR
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q3" value="c"> To check video resolution
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="space-y-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-semibold text-sm text-slate-900">4. How do faceless YouTube channels primarily monetize?</p>
+          <div class="space-y-2 text-xs">
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q4" value="a"> Selling physical t-shirts on the street
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q4" value="b" data-correct="true"> YouTube AdSense, affiliate marketing, sponsored integrations, and digital products
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q4" value="c"> Donations via postal mail
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button id="submit-quiz" onclick="gradeQuiz()" class="w-full py-4 bg-emerald-900 hover:bg-emerald-800 text-white font-bold rounded-xl text-sm shadow-lg transition-all">
+        Submit Quiz Answers
+      </button>
+
+      <div id="result-box" class="hidden p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-3">
+        <h3 id="result-title" class="font-bold text-lg text-emerald-950"></h3>
+        <p id="result-desc" class="text-xs text-slate-700"></p>
+        <a href="/" class="inline-block mt-2 px-6 py-3 bg-emerald-900 text-white font-semibold rounded-xl text-xs">Return to Portal Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function gradeQuiz() {
+      let score = 0;
+      const total = 4;
+      for (let i = 1; i <= total; i++) {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selected && selected.dataset.correct === 'true') {
+          score++;
+        }
+      }
+      const resultBox = document.getElementById('result-box');
+      const resultTitle = document.getElementById('result-title');
+      const resultDesc = document.getElementById('result-desc');
+      
+      resultBox.classList.remove('hidden');
+      if (score >= 3) {
+        resultTitle.textContent = `Congratulations! You Passed (${score}/${total})`;
+        resultDesc.textContent = 'Fantastic work! Your Week 1 YouTube Automation quiz has been recorded successfully.';
+      } else {
+        resultTitle.textContent = `Score: ${score}/${total}`;
+        resultDesc.textContent = 'Keep reviewing the Week 1 modules and try again to achieve mastery!';
+      }
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

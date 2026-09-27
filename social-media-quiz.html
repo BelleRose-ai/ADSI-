@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Management - Week 1 Quiz | ADSI Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#fbfbfa] text-slate-900 font-['Inter',sans-serif] min-h-screen py-12 px-4">
+  <div class="max-w-2xl mx-auto space-y-8">
+    <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+      <div>
+        <span class="text-xs uppercase tracking-wider text-emerald-800 font-bold bg-emerald-50 px-3 py-1 rounded-full">Social Media Management Track</span>
+        <h1 class="font-['Playfair_Display',serif] text-2xl font-bold text-emerald-950 mt-2">Week 1 Assessment Quiz</h1>
+      </div>
+      <a href="/" class="text-xs font-semibold text-slate-600 hover:text-emerald-900 bg-white border border-slate-200 px-4 py-2 rounded-xl shadow-sm">← Back to Portal</a>
+    </div>
+
+    <div id="quiz-container" class="bg-white rounded-3xl p-8 border border-slate-200 shadow-xl space-y-8">
+      <div class="space-y-6">
+        <!-- Question 1 -->
+        <div class="space-y-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-semibold text-sm text-slate-900">1. What is the primary purpose of defining a brand voice and tone?</p>
+          <div class="space-y-2 text-xs">
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q1" value="a"> To make posts look longer
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q1" value="b" data-correct="true"> To ensure consistent communication and resonance with the target audience across all posts
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q1" value="c"> To avoid using emojis
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="space-y-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-semibold text-sm text-slate-900">2. Which design principle is crucial when creating scroll-stopping social media carousels?</p>
+          <div class="space-y-2 text-xs">
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q2" value="a"> Using tiny fonts that are hard to read
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q2" value="b" data-correct="true"> Strong visual hierarchy, legible typography, and compelling slide 1 hooks
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q2" value="c"> Using black and white images exclusively
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="space-y-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-semibold text-sm text-slate-900">3. What makes an Instagram caption hook effective?</p>
+          <div class="space-y-2 text-xs">
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q3" value="a"> Writing a boring legal disclaimer
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q3" value="b" data-correct="true"> Sparking curiosity, addressing a pain point, or making a bold statement before the "more" button
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q3" value="c"> Putting 100 irrelevant hashtags at the top
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="space-y-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="font-semibold text-sm text-slate-900">4. Why do social media managers use content calendars?</p>
+          <div class="space-y-2 text-xs">
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q4" value="a"> To make work harder
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q4" value="b" data-correct="true"> For strategic consistency, batch creation, and seamless multi-platform scheduling
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-700">
+              <input type="radio" name="q4" value="c"> To prevent anyone else from seeing the posts
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button id="submit-quiz" onclick="gradeQuiz()" class="w-full py-4 bg-emerald-900 hover:bg-emerald-800 text-white font-bold rounded-xl text-sm shadow-lg transition-all">
+        Submit Quiz Answers
+      </button>
+
+      <div id="result-box" class="hidden p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-3">
+        <h3 id="result-title" class="font-bold text-lg text-emerald-950"></h3>
+        <p id="result-desc" class="text-xs text-slate-700"></p>
+        <a href="/" class="inline-block mt-2 px-6 py-3 bg-emerald-900 text-white font-semibold rounded-xl text-xs">Return to Portal Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function gradeQuiz() {
+      let score = 0;
+      const total = 4;
+      for (let i = 1; i <= total; i++) {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selected && selected.dataset.correct === 'true') {
+          score++;
+        }
+      }
+      const resultBox = document.getElementById('result-box');
+      const resultTitle = document.getElementById('result-title');
+      const resultDesc = document.getElementById('result-desc');
+      
+      resultBox.classList.remove('hidden');
+      if (score >= 3) {
+        resultTitle.textContent = `Congratulations! You Passed (${score}/${total})`;
+        resultDesc.textContent = 'Fantastic work! Your Week 1 Social Media Management quiz has been recorded successfully.';
+      } else {
+        resultTitle.textContent = `Score: ${score}/${total}`;
+        resultDesc.textContent = 'Keep reviewing the Week 1 modules and try again to achieve mastery!';
+      }
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
