@@ -1,3 +1,8 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 export interface Course {
   id: string;
   title: string;
@@ -43,7 +48,7 @@ export const COURSES: Course[] = [
     duration: '6 Weeks',
     category: 'Admin & Operations',
     imagePlaceholder: 'https://i.postimg.cc/wTsRxPZB/Gemini-Generated-Image-7r8gl77r8gl77r8g.jpg',
-    heroPlaceholder: 'https://i.postimg.cc/wTsRxPZB/Gemini-Generated-Image-7r8gl77r8gl77r8g.jpg',
+    heroPlaceholder: 'https://i.postimg.cc/50fvb79F/Gemini-Generated-Image-nu4952nu4952nu49.jpg',
     overview: 'The Virtual Assistant track prepares you for high-paying remote support roles. You will master calendar management, email correspondence, bookkeeping basics, customer support tools, and professional client communication.',
     learningOutcomes: [
       'Master Google Workspace, Microsoft 365, and advanced project management tools (Trello, Asana, Notion).',
@@ -141,7 +146,7 @@ export const COURSES: Course[] = [
     duration: '6 Weeks',
     category: 'Marketing & Growth',
     imagePlaceholder: 'https://i.postimg.cc/fT0SWFF2/Gemini-Generated-Image-uayv9quayv9quayv.jpg',
-    heroPlaceholder: 'https://i.postimg.cc/fT0SWFF2/Gemini-Generated-Image-uayv9quayv9quayv.jpg',
+    heroPlaceholder: 'https://i.postimg.cc/0QJQg7D2/Gemini-Generated-Image-v0g5wv0g5wv0g5wv.jpg',
     overview: 'Social Media Management is one of the most sought-after skills by modern businesses. Learn how to create viral content calendars, write engaging captions, analyze metrics, and build loyal online communities.',
     learningOutcomes: [
       'Create high-converting content calendars for Instagram, TikTok, Twitter/X, and LinkedIn.',
@@ -234,8 +239,8 @@ export const COURSES: Course[] = [
     description: 'Learn the exact blueprint for creating profitable faceless YouTube channels using outsourcing and AI tools.',
     duration: '6 Weeks',
     category: 'Content & Media',
-    imagePlaceholder: 'youtube_automation_thumbnail.jpg',
-    heroPlaceholder: 'yt_hero_placeholder.jpg',
+    imagePlaceholder: 'https://i.postimg.cc/wMDJ5Cjn/Gemini-Generated-Image-vg3yncvg3yncvg3y.jpg',
+    heroPlaceholder: 'https://i.postimg.cc/wMp9SZ9Z/Gemini-Generated-Image-l6slb9l6slb9l6sl.jpg',
     overview: 'YouTube Automation allows you to build media businesses that generate passive ad revenue and affiliate commissions without ever recording yourself on camera.',
     learningOutcomes: [
       'Find profitable, low-competition niches with high CPMs (Cost Per Mille).',
@@ -321,8 +326,8 @@ export const COURSES: Course[] = [
     description: 'Learn how to connect business apps using Make.com, Zapier, and custom AI agents to automate tedious tasks.',
     duration: '6 Weeks',
     category: 'Tech & AI',
-    imagePlaceholder: 'ai_automation_thumbnail.jpg',
-    heroPlaceholder: 'ai_hero_placeholder.jpg',
+    imagePlaceholder: 'https://i.postimg.cc/pTRtX8nF/Gemini-Generated-Image-qfuj3aqfuj3aqfuj.jpg',
+    heroPlaceholder: 'https://i.postimg.cc/5tnTSrRs/Gemini-Generated-Image-y8b7svy8b7svy8b7-(1).jpg',
     overview: 'Businesses are desperate for professionals who can automate their operations using modern AI tools. Learn no-code automation platforms and build smart agents that save companies hundreds of hours.',
     learningOutcomes: [
       'Master Make.com and Zapier to build complex multi-step automated workflows.',
@@ -408,8 +413,8 @@ export const COURSES: Course[] = [
     description: 'Master cutting-edge AI video tools to produce breathtaking commercials, cinematic shorts, and marketing videos.',
     duration: '6 Weeks',
     category: 'Content & Media',
-    imagePlaceholder: 'ai_video_thumbnail.jpg',
-    heroPlaceholder: 'aivid_hero_placeholder.jpg',
+    imagePlaceholder: 'https://i.postimg.cc/6QhmcPyW/Gemini-Generated-Image-72r1lf72r1lf72r1.jpg',
+    heroPlaceholder: 'https://i.postimg.cc/Bvz6wm8c/Gemini-Generated-Image-wbmd2vwbmd2vwbmd.jpg',
     overview: 'Generative AI is revolutionizing video production. Learn how to use Runway Gen-2, Pika, Midjourney, ElevenLabs, and CapCut to create Hollywood-grade visual content from simple text prompts.',
     learningOutcomes: [
       'Generate stunning cinematic visuals using Midjourney, DALL-E 3, and Stable Diffusion.',
@@ -495,8 +500,8 @@ export const COURSES: Course[] = [
     description: 'Learn how to run profitable paid ads and build automated sales funnels that generate consistent revenue for businesses.',
     duration: '6 Weeks',
     category: 'Marketing & Growth',
-    imagePlaceholder: 'digital_marketing_thumbnail.jpg',
-    heroPlaceholder: 'dm_hero_placeholder.jpg',
+    imagePlaceholder: 'https://i.postimg.cc/LX60bV1N/Gemini-Generated-Image-fxoz0jfxoz0jfxoz.jpg',
+    heroPlaceholder: 'https://i.postimg.cc/Bng4RMz7/Gemini-Generated-Image-c5ugfwc5ugfwc5ug.jpg',
     overview: 'Digital Marketing is the engine of modern commerce. Learn Meta Ads, Google Ads, email marketing funnels (Mailchimp / Klaviyo), and conversion rate optimization to scale businesses rapidly.',
     learningOutcomes: [
       'Set up, manage, and optimize high-converting Facebook and Instagram ad campaigns.',
@@ -582,8 +587,8 @@ export const COURSES: Course[] = [
     description: 'Learn how to produce engaging video content with your smartphone and build a loyal audience across platforms.',
     duration: '6 Weeks',
     category: 'Content & Media',
-    imagePlaceholder: 'content_creation_thumbnail.jpg',
-    heroPlaceholder: 'cc_hero_placeholder.jpg',
+    imagePlaceholder: 'https://i.postimg.cc/440FWVNS/Gemini-Generated-Image-kzvfeokzvfeokzvf.jpg',
+    heroPlaceholder: 'https://i.postimg.cc/Y9ySZbhR/Gemini-Generated-Image-8gxkxr8gxkxr8gxk.jpg',
     overview: 'Content creators are the new media moguls. Learn smartphone camera angles, lighting, professional audio recording, engaging mobile editing in CapCut, and storytelling frameworks that captivate viewers.',
     learningOutcomes: [
       'Master smartphone video shooting techniques, lighting, and wireless microphone setup.',

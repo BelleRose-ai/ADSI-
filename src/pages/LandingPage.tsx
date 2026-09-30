@@ -20,7 +20,7 @@ export default function LandingPage({ setCurrentView }: LandingPageProps) {
           {/* Left Hero Content */}
           <div className="lg:col-span-7 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 bg-emerald-900/10 text-emerald-900 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">
-              <Sparkles className="w-4 h-4 text-amber-600" /> Fully-Funded Tech Scholarship Cohort Open
+              <Sparkles className="w-4 h-4 text-amber-600" /> Fully-Funded Tech Scholarship Cohort Opening Soon
             </div>
             <h1 className="font-['Playfair_Display',serif] text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-emerald-950 leading-[1.15]">
               Accelerate Your Digital Career in <span className="text-emerald-800 underline decoration-amber-500 decoration-wavy underline-offset-8">6 Weeks</span>
@@ -30,11 +30,10 @@ export default function LandingPage({ setCurrentView }: LandingPageProps) {
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
               <button
-                onClick={() => { setCurrentView('apply'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className="px-8 py-4 bg-[#064e3b] hover:bg-emerald-900 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3 text-base group"
+                disabled
+                className="px-8 py-4 bg-stone-300 text-slate-600 font-semibold rounded-xl shadow-sm flex items-center justify-center gap-3 text-base cursor-not-allowed opacity-90"
               >
-                Apply For Scholarship
-                <ArrowRight className="w-5 h-5 text-amber-400 group-hover:translate-x-1 transition-transform" />
+                Applications Open Oct 11
               </button>
               <button
                 onClick={() => {
@@ -307,10 +306,10 @@ export default function LandingPage({ setCurrentView }: LandingPageProps) {
           </p>
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
-              onClick={() => { setCurrentView('apply'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-              className="px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2 text-base w-full sm:w-auto justify-center"
+              disabled
+              className="px-8 py-4 bg-stone-300 text-slate-600 font-semibold rounded-xl shadow-sm flex items-center gap-2 text-base w-full sm:w-auto justify-center cursor-not-allowed opacity-90"
             >
-              <Sparkles className="w-5 h-5 text-amber-200" /> Apply For Scholarship Now
+              Applications Open Oct 11
             </button>
             <button
               onClick={() => { setCurrentView('tracks'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}

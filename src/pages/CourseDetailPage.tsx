@@ -81,7 +81,7 @@ export default function CourseDetailPage({ courseId, setCurrentView }: CourseDet
               <div className="bg-emerald-900 rounded-3xl p-3 shadow-2xl border border-emerald-800">
                 <div className="relative rounded-2xl overflow-hidden bg-emerald-950 aspect-[4/3] flex flex-col items-center justify-center text-center p-6 text-white group">
                   <img
-                    src="course-hero-placeholder.jpg"
+                    src={course.heroPlaceholder}
                     alt={`${course.title} student success`}
                     className="absolute inset-0 w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
                     onError={(e) => {
