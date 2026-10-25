@@ -30,10 +30,11 @@ export default function LandingPage({ setCurrentView }: LandingPageProps) {
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
               <button
-                disabled
-                className="px-8 py-4 bg-stone-300 text-slate-600 font-semibold rounded-xl shadow-sm flex items-center justify-center gap-3 text-base cursor-not-allowed opacity-90"
+                onClick={() => { setCurrentView('apply'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                className="px-8 py-4 bg-[#064e3b] hover:bg-emerald-900 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3 text-base group"
               >
-                Applications Open Oct 11
+                Apply For Scholarship
+                <ArrowRight className="w-5 h-5 text-amber-400 group-hover:translate-x-1 transition-transform" />
               </button>
               <button
                 onClick={() => {
