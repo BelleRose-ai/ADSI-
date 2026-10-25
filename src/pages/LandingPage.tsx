@@ -20,7 +20,7 @@ export default function LandingPage({ setCurrentView }: LandingPageProps) {
           {/* Left Hero Content */}
           <div className="lg:col-span-7 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 bg-emerald-900/10 text-emerald-900 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">
-              <Sparkles className="w-4 h-4 text-amber-600" /> Fully-Funded Tech Scholarship Cohort Opening Soon
+              <Sparkles className="w-4 h-4 text-amber-600" /> Fully-Funded Tech Scholarship Cohort Open
             </div>
             <h1 className="font-['Playfair_Display',serif] text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-emerald-950 leading-[1.15]">
               Accelerate Your Digital Career in <span className="text-emerald-800 underline decoration-amber-500 decoration-wavy underline-offset-8">6 Weeks</span>
