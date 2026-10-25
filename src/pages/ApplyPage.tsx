@@ -475,7 +475,7 @@ export default function ApplyPage({ initialTrack, initialPathway, setCurrentView
                   <div className="bg-[#fefce8] p-4 rounded-xl border border-amber-200 flex items-center gap-3">
                     <Sparkles className="w-5 h-5 text-amber-600 shrink-0" />
                     <span className="text-xs text-amber-900 font-medium">
-                      <strong>Payment Mode Preview:</strong> Tuition: ₦140,000 (Waived) | General Acceptance Fee: ₦10,000 due upon admission.
+                      <strong>Payment Mode Preview:</strong> Tuition: <span className="line-through">₦140,000</span> (Waived) | General Acceptance Fee: ₦10,000 due upon admission.
                     </span>
                   </div>
                 </div>
